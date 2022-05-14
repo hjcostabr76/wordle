@@ -1,0 +1,132 @@
+
+body {
+    background-color: #222;
+    color: #eee;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: auto;
+}
+
+main {
+    background-color: #555;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+
+.container_tries {
+    border: 1px solid #777;
+    padding-top: 10px;
+    margin: 5px;
+    flex: 1;
+    border-radius: 10px;
+}
+.container_tries.success {
+    border: 2px solid green;
+    background: #354035;
+}
+
+.combo_word {
+    margin-bottom: 15px;
+    min-width: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.combo_char {
+    border: 2px solid #343434;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    font-size: 1.35rem;
+    text-align: center;
+    font-weight: bold;
+    background: lightyellow;
+    color: #222333;
+    padding: 0;
+}
+.combo_char.warn {
+    background: #cbae21;
+    color: #fff;
+    border: 2px solid #cbae21;
+}
+.combo_char.success {
+    background-color: #427642;
+    color: white;
+    border-color: #399b39;
+}
+
+#alphabet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.alpha_line {
+    display: flex;
+    justify-content: center;
+}
+
+.alpha_button {
+    text-transform: uppercase;
+    border: 1px solid gray;
+    height: 7vw;
+    border-radius: 50%;
+    max-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    color: inherit;
+    animation: text-shadow .7s, box-shadow .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alpha_button:hover {
+    text-shadow: 0px 0px 4px #00ad28;
+    box-shadow: 0px 0px 6px #00ad283b;
+    background-color: rgb(255 255 255 / 2%);
+}
+
+.alpha_action {
+    font-size: .9rem;
+    width: unset;
+    padding: 10px 15px;
+    max-width: 85px;
+    margin-bottom: 8px;
+}
+
+.alpha_char {
+    width: 7vw;
+    margin: 0 8px 8px 0;
+    max-width: 50px;
+    font-size: 1.35rem;
+}
+.alpha_char.error:hover {
+    text-shadow: 0px 0px 4px #5a5a5a;
+    box-shadow: 0px 0px 6px #343434;
+}
+.alpha_char.success {
+    border-color: #399b39;
+    background: rgb(21 145 54 / 22%);
+}
+
+.error {
+    border: 2px solid #320202;
+    color: #605e5e;
+    background: #3e3939;
+}

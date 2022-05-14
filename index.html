@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>hj.Termo</title>
+
+<link rel="stylesheet" href="index.css"/>
+
+</head>
+<!-- <body onload="init()"> -->
+<body>
+
+<h1>hj.Termo</h1>
+
+<input id="try_index" value="0" type="hidden" />
+<input id="char_index" value="0" type="hidden" />
+<input id="words_count" value="4" type="hidden" />
+<input id="words_length" value="5" type="hidden" />
+
+<main>
+    <section class="container_tries success" data-idx="1">
+        <div class="combo_word" data-idx="1">
+            <form>
+                <input class="combo_char" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1, 1, 1)"/>
+                <input class="combo_char" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(1, 1, 2)"/>
+                <input class="combo_char" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(1, 1, 3)"/>
+                <input class="combo_char" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(1, 1, 4)"/>
+                <input class="combo_char" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(1, 1, 5)"/>
+            </form>
+        </div>
+
+        <div class="combo_word" data-idx="3">
+            <form>
+                <input class="combo_char error" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1)"/>
+                <input class="combo_char" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(2)"/>
+                <input class="combo_char" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(3)"/>
+                <input class="combo_char success" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(4)"/>
+                <input class="combo_char" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(5)"/>
+            </form>
+        </div>
+
+        <div class="combo_word" data-idx="4">
+            <form>
+                <input class="combo_char" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1)"/>
+                <input class="combo_char" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(2)"/>
+                <input class="combo_char" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(3)"/>
+                <input class="combo_char" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(4)"/>
+                <input class="combo_char" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(5)"/>
+            </form>
+        </div>
+    </section>
+
+    <section class="container_tries" data-idx="2">
+        <div class="combo_word" data-idx="1">
+            <form>
+                <input class="combo_char success" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1)"/>
+                <input class="combo_char warn" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(2)"/>
+                <input class="combo_char error" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(3)"/>
+                <input class="combo_char warn" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(4)"/>
+                <input class="combo_char error" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(5)"/>
+            </form>
+        </div>
+    </section>
+
+    <section class="container_tries" data-idx="3">
+        <div class="combo_word" data-idx="1">
+            <form>
+                <input class="combo_char" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1)"/>
+                <input class="combo_char" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(2)"/>
+                <input class="combo_char" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(3)"/>
+                <input class="combo_char" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(4)"/>
+                <input class="combo_char" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(5)"/>
+            </form>
+        </div>
+    </section>
+
+    <section class="container_tries" data-idx="4">
+        <div class="combo_word" data-idx="1">
+            <form>
+                <input class="combo_char" data-idx=0 size="1" maxlength="1" required oninput="onLetterChange(1)"/>
+                <input class="combo_char" data-idx=1 size="1" maxlength="1" required oninput="onLetterChange(2)"/>
+                <input class="combo_char" data-idx=2 size="1" maxlength="1" required oninput="onLetterChange(3)"/>
+                <input class="combo_char" data-idx=3 size="1" maxlength="1" required oninput="onLetterChange(4)"/>
+                <input class="combo_char" data-idx=4 size="1" maxlength="1" required oninput="onLetterChange(5)"/>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div id="alphabet">
+        <div id="keys"></div>
+        <div id="actions"></div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="page.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+</body>
+</html> 
