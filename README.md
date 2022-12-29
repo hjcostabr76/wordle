@@ -1,3 +1,3 @@
-# hj.Words
+# hj.wordle
 
 That same game of trying to discover the hidden words. Just for fun...
